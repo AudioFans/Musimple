@@ -49,10 +49,8 @@ Next, convert the audio files into an HDF5 format using the gtzan2h5.py script:
 python gtzan2h5.py --root_dir /path/to/audio/files --output_h5_file /path/to/output.h5 --config_path bigvgan_v2_22khz_80band_256x/config.json --sr 22050
 ```
 
-Preprocessed Data
 If this process seems cumbersome, don’t worry! **We have already preprocessed the dataset**, and you can find it in the **musimple/dataset** directory. You can download and use this data directly to skip the preprocessing steps.
 
-Data Breakdown
 In this preprocessing stage, there are two main parts:
 
 Text to Latent Transformation: We use a Sentence Transformer to convert text labels into latent representations.
@@ -68,7 +66,6 @@ cd Musimple
 python train.py
 ```
 
-Configurable Parameters
 All training-related parameters can be adjusted in the configuration file located at:
 ```
 ./config/train.yaml
