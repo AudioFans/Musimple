@@ -1,0 +1,14 @@
+batch_size: 48
+mel_frames: 800
+lr: 0.0001
+num_epochs: 100000
+sample_interval: 250
+h5_file_path: './dataset/gtzan_train.h5'
+device: 'cuda:4'
+input_size: [80, 800]
+patch_size: 8
+in_channels: 1
+hidden_size: 384
+depth: 12
+num_heads: 6
+checkpoint_dir: 'gtzan-ck'
